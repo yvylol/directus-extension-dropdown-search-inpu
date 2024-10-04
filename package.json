@@ -1,0 +1,36 @@
+{
+	"name": "directus-extension-dropdown-search-input",
+	"description": "Please enter a description for your extension",
+	"icon": "extension",
+	"version": "1.0.0",
+	"keywords": [
+		"directus",
+		"directus-extension",
+		"directus-extension-interface"
+	],
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"directus:extension": {
+		"type": "interface",
+		"path": "dist/index.js",
+		"source": "src/index.ts",
+		"host": "^10.10.0"
+	},
+	"scripts": {
+		"build": "directus-extension build --watch",
+		"dev": "directus-extension build -w --no-minify",
+		"link": "directus-extension link"
+	},
+	"devDependencies": {
+		"@directus/app": "^13.2.0",
+		"@directus/composables": "^11.1.0",
+		"@directus/extensions-sdk": "12.0.2",
+		"@directus/sdk": "^17.0.1",
+		"@directus/stores": "^1.0.0",
+		"@directus/types": "^12.0.1",
+		"typescript": "^5.6.2",
+		"vue": "^3.5.10"
+	}
+}
